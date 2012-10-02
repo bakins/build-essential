@@ -9,4 +9,8 @@ recipe            "build-essential", "Installs packages required for compiling C
   supports os
 end
 
+%w{ apt }.each do |d|
+  depends d
+end
+
 supports "mac_os_x", ">= 10.6.0"
